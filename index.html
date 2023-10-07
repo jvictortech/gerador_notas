@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gerenciador de Notas</title>
+    <script type="text/javascript" src="gerador.js"></script>
+    
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        #notas {
+            margin: 10px 0;
+        }
+        #votacao {
+            margin-top: 20px;
+        }
+        #votacao button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerenciador de Notas</h1>
+        <div id="notas">
+            <label for="nota">Insira a nota do aluno:</label>
+            <input type="number" id="nota" min="0" max="10">
+            <button onclick="adicionarNota()">Adicionar</button>
+        </div>
+        <div id="media"></div>
+        <div id="votacao">
+            <button onclick="votarPositivo()">Votar Positivo</button>
+            <button onclick="votarNegativo()">Votar Negativo</button>
+            <p>Votos Positivos: <span id="votosPositivos">0</span></p>
+            <p>Votos Negativos: <span id="votosNegativos">0</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
