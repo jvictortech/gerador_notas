@@ -18,3 +18,5 @@ Ter qualquer navegador instalado na sua máquina.
 
 # Como executar
 
+Acesse o link em qualquer navegador (https://jvictortech.github.io/gerador_notas.github.io/)
+
